@@ -1,0 +1,213 @@
+/* YourComponent.css */
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family:Roboto, sans-serif;
+}
+
+body{
+  background-color: #d7c6f3;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tier {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-tier {
+  background-color: #9376be;
+  color: white;
+  padding: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#mid-tier{
+  margin-top: 20px;
+}
+
+.type-of-paper {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.type-of-paper p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Select box styling */
+.select-box {
+  position: relative;
+  width: 100%;
+}
+
+.select-box.open select {
+  border-color: blue;
+  margin-top: 10px;
+}
+
+select {
+  width: calc(100% - 30px); /* Adjust width */
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: white;
+  color: #555;
+  text-align: center;
+  font-family:Roboto, sans-serif;
+}
+
+select::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Style for the dropdown arrow */
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px; /* Adjust font-size */
+  color: #555;
+}
+
+ select:focus {
+  border-color: blue;
+  border-width: 2px;
+} 
+
+/* Quantity containers  styling*/
+.quantity-c {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.qt {
+  font-size: 18px;
+}
+
+.quantity-input {
+  width: calc(100% - 15px);
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  gap: 16px;
+  width: calc(100% - 15px);
+}
+
+.page-button,
+.word-button {
+  background-color: #9376be;
+  color: white;
+  border: 1px solid #9376be;
+  border-radius: 12px;
+  padding: 10px;
+  width: 50%;
+  font-size: 17px;
+  text-align: left;
+}
+
+/* Calendar Stylings */
+.calen-c {
+  margin-top: 20px;
+}
+
+.calen-c p {
+  font-size: 18px;
+}
+
+.deadline-input {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px; /* Adjust font-size as needed */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Checkout Payment Styling */
+.checkout {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 20px;
+}
+
+.price-main {
+  text-align: center;
+}
+
+.price-main p{
+  font-size:12px;
+  color: #b6b5ba;
+}
+
+.price {
+  font-size: 24px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.order-btn button {
+  background-color: #ffc966;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out; /* Add a transition for smooth effect */
+
+  /* Additional styles for hover effect */
+  &:hover {
+    transform: scale(1.05); /* Scale the button on hover */
+  }
+}
+
+.highlight{
+  color: black;
+}
+
+.custom-calendar {
+  background-color: #d7bcff !important; /* Important to override default styles */
+
+  .react-datepicker__day--selected {
+    background-color: white !important; /* Background color for selected date */
+    color: #333; /* Text color for selected date */
+  }
+}
+
